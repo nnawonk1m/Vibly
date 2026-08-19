@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "Vibly",
+    "slug": "Vibly",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/vibly.png",
+    "scheme": "vibly",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/images/vibly.png",
+      "bundleIdentifier": "com.nln.Vibly",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ],
+      "blockedPermissions": [
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#E4F0EB",
+        "foregroundImage": "./assets/images/vibly.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nln.Vibly"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/vibly.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#8DC9B5",
+          "image": "./assets/images/vibly_rounded.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-font",
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "neverForLocation": true
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d46d4f93-a6b3-4273-b29e-fdc6b11bd52f"
+      }
+    },
+    "owner": "nln_n"
+  }
+}
